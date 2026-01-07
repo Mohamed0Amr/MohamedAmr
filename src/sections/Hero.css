@@ -120,22 +120,23 @@
     position: relative;
     width: 100%;
     max-width: 500px;
-    aspect-ratio: 1;
-    border-radius: 2rem;
-    overflow: hidden;
-    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, var(--bg-color), var(--border-color));
+    /* Removed aspect-ratio to allow natural image shape */
+    /* Removed border-radius and overflow as we don't want to clip the free-standing image */
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-wrapper img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.1));
+    /* Optional: adds a subtle shadow to the cutout itself, nice touch but can be removed if strictly no shadow requested. User said "not in the box", usually means object shadow is ok but box shadow is not. I'll stick to clean. */
 }
 
-[data-theme="dark"] .image-wrapper {
-    box-shadow: 0 0 40px rgba(37, 99, 235, 0.1);
-}
+/* [data-theme="dark"] .image-wrapper rule removed as shadow is gone */
 
 /* Responsive */
 @media (max-width: 968px) {
