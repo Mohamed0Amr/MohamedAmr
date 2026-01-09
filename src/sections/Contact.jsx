@@ -12,17 +12,17 @@ const Contact = () => {
 
                 <a href="mailto:contact@example.com" className="email-button">
                     <Mail size={20} />
-                    contact@example.com
+                    mohamedamr9722@gmail.com
                 </a>
 
                 <div className="footer-socials">
-                    <a href="#" className="social-icon" aria-label="GitHub">
+                    <a href="https://github.com/Mohamed0Amr" className="social-icon" aria-label="GitHub">
                         <Github size={24} />
                     </a>
-                    <a href="#" className="social-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mohamed-amr-9722/" className="social-icon" aria-label="LinkedIn">
                         <Linkedin size={24} />
                     </a>
-                    <a href="#" className="social-icon" aria-label="Twitter">
+                    <a href="https://x.com/ham0udi1" className="social-icon" aria-label="Twitter">
                         <Twitter size={24} />
                     </a>
                 </div>
