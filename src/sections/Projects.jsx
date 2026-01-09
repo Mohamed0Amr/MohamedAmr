@@ -6,7 +6,7 @@ const Projects = () => {
         {
             title: 'Quraan Kareem',
             description: 'Quraan Kareem is a mobile application that allows users to read the Holy Quran in different languages and styles. Can Listen to the Quran by Surah',
-            tags: ['Flutter', 'Dart', 'Firebase','REST API','Audio Player'],
+            tags: ['Flutter', 'Dart', 'Firebase', 'REST API', 'Audio Player'],
             image: `${import.meta.env.BASE_URL}QuraanKareem.webp`,
             liveLink: 'https://www.loom.com/share/079efe82c55b46b6b9ae7bcfc98ca2cf',
             codeLink: 'https://github.com/Mohamed0Amr/Quraan-Kareem'
@@ -60,10 +60,6 @@ const Projects = () => {
                                     ))}
                                 </div>
 
-                                <div className="project-links">
-                                    <a href={project.liveLink} className="text-link">Live Demo <ExternalLink size={14} /></a>
-                                    <a href={project.codeLink} className="text-link">Source Code <Github size={14} /></a>
-                                </div>
                             </div>
                         </div>
                     ))}
