@@ -4,12 +4,12 @@ import './Projects.css';
 const Projects = () => {
     const projects = [
         {
-            title: 'E-Commerce Dashboard',
-            description: 'A comprehensive analytics dashboard for online retailers with real-time data visualization and inventory management.',
-            tags: ['React', 'D3.js', 'Firebase', 'Tailwind'],
-            image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop',
-            liveLink: '#',
-            codeLink: '#'
+            title: 'Quraan Kareem',
+            description: 'Quraan Kareem is a mobile application that allows users to read the Holy Quran in different languages and styles. Can Listen to the Quran by Surah',
+            tags: ['Flutter', 'Dart', 'Firebase','REST API','Audio Player'],
+            image: `${import.meta.env.BASE_URL}QuraanKareem.webp`,
+            liveLink: 'https://www.loom.com/share/079efe82c55b46b6b9ae7bcfc98ca2cf',
+            codeLink: 'https://github.com/Mohamed0Amr/Quraan-Kareem'
         },
         {
             title: 'Task Management App',
