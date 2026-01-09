@@ -7,19 +7,19 @@ const Features = () => {
             icon: <Layout size={32} />,
             title: 'Frontend Development',
             description: 'Building responsive, accessible, and performant user interfaces.',
-            skills: ['React', 'Vue', 'TypeScript', 'Tailwind/CSS', 'Next.js']
+            skills: ['React', 'Flutter', 'Dart', 'Swift', 'TypeScript']
         },
         {
             icon: <Server size={32} />,
             title: 'Backend Development',
             description: 'Creating robust APIs and secure server-side logic.',
-            skills: ['Node.js', 'Python', 'PostgreSQL', 'Redis', 'GraphQL']
+            skills: ['Node.js', 'Python', 'PostgreSQL', 'Java']
         },
         {
             icon: <PenTool size={32} />,
             title: 'Design & Tools',
             description: 'Designing intuitive flows and using modern workflows.',
-            skills: ['Figma', 'Git', 'Docker', 'AWS', 'CI/CD']
+            skills: ['Figma', 'Git', 'Docker', 'CI/CD']
         }
     ];
 
