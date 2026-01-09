@@ -11,8 +11,12 @@ const Hero = () => {
                         Hi, I'm <span className="highlight">Mohamed</span>
                     </h1>
                     <p className="hero-description">
-                        I build accessible, pixel-perfect, and performant web experiences.
-                        Passionate about turning complex problems into simple, beautiful solutions.
+                        Software Engineer specialized in mobile application development and digital banking
+                        solutions using Flutter, Temenos Quantum,
+                        and native iOS. Experienced in building secure, scalable apps,
+                        integrating APIs,
+                        and delivering high-quality mobile solutions with a focus on performance,
+                        clean code, and user experience.
                     </p>
 
                     <div className="hero-actions">
@@ -25,8 +29,8 @@ const Hero = () => {
                     </div>
 
                     <div className="social-links">
-                        <a href="#" aria-label="GitHub"><Github size={24} /></a>
-                        <a href="#" aria-label="LinkedIn"><Linkedin size={24} /></a>
+                        <a href="https://github.com/Mohamed0Amr" aria-label="GitHub"><Github size={24} /></a>
+                        <a href="https://www.linkedin.com/in/mohamed-amr-026b69219/" aria-label="LinkedIn"><Linkedin size={24} /></a>
                         <a href="mailto:contact@example.com" aria-label="Email"><Mail size={24} /></a>
                     </div>
                 </div>
