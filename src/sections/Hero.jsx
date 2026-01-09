@@ -12,7 +12,7 @@ const Hero = () => {
                     </h1>
                     <p className="hero-description">
                         Software Engineer specialized in mobile application development and digital banking
-                        solutions using Flutter, Temenos Quantum,
+                        solutions using Flutter,
                         and native iOS. Experienced in building secure, scalable apps,
                         integrating APIs,
                         and delivering high-quality mobile solutions with a focus on performance,
@@ -31,7 +31,7 @@ const Hero = () => {
                     <div className="social-links">
                         <a href="https://github.com/Mohamed0Amr" aria-label="GitHub"><Github size={24} /></a>
                         <a href="https://www.linkedin.com/in/mohamed-amr-026b69219/" aria-label="LinkedIn"><Linkedin size={24} /></a>
-                        <a href="mailto:contact@example.com" aria-label="Email"><Mail size={24} /></a>
+                        <a href="mailto:mohamedamr9722@gmail.com" aria-label="Email"><Mail size={24} /></a>
                     </div>
                 </div>
 
