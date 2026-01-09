@@ -4,7 +4,7 @@ import './Projects.css';
 const Projects = () => {
     const projects = [
         {
-            title: 'Quraan Kareem',
+            title: 'Quraan Kareem App',
             description: 'Quraan Kareem is a mobile application that allows users to read the Holy Quran in different languages and styles. Can Listen to the Quran by Surah',
             tags: ['Flutter', 'Dart', 'Firebase', 'REST API', 'Audio Player'],
             image: `${import.meta.env.BASE_URL}QuraanKareem.webp`,
@@ -12,12 +12,12 @@ const Projects = () => {
             codeLink: 'https://github.com/Mohamed0Amr/Quraan-Kareem'
         },
         {
-            title: 'Task Management App',
-            description: 'Collaborative project management tool featuring drag-and-drop boards, team chat, and file sharing.',
-            tags: ['Vue.js', 'Node.js', 'Socket.io', 'MongoDB'],
-            image: 'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop',
+            title: 'Store App',
+            description: 'Store App is a mobile application that allows users to buy and sell products.',
+            tags: ['SwiftUI', 'Swift', 'Firebase', 'REST API'],
+            image: `${import.meta.env.BASE_URL}appStore.webp`,
             liveLink: '#',
-            codeLink: '#'
+            codeLink: 'https://github.com/Mohamed0Amr/StoreApp'
         },
         {
             title: 'AI Content Generator',
