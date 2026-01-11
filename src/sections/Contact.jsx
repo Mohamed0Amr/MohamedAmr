@@ -19,7 +19,7 @@ const Contact = () => {
                     <a href="https://github.com/Mohamed0Amr" className="social-icon" aria-label="GitHub">
                         <Github size={24} />
                     </a>
-                    <a href="https://www.linkedin.com/in/mohamed-amr-9722/" className="social-icon" aria-label="LinkedIn">
+                    <a href="https://www.linkedin.com/in/mohamed-amr-026b69219/" className="social-icon" aria-label="LinkedIn">
                         <Linkedin size={24} />
                     </a>
                     <a href="https://x.com/ham0udi1" className="social-icon" aria-label="Twitter">
