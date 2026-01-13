@@ -19,14 +19,7 @@ const Projects = () => {
             liveLink: '#',
             codeLink: 'https://github.com/Mohamed0Amr/StoreApp'
         },
-        {
-            title: 'AI Content Generator',
-            description: 'SaaS application leveraging LLMs to help marketers create high-quality blog posts and social media copy.',
-            tags: ['Next.js', 'OpenAI API', 'Stripe', 'Postgres'],
-            image: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?q=80&w=1000&auto=format&fit=crop',
-            liveLink: '#',
-            codeLink: '#'
-        }
+
     ];
 
     return (

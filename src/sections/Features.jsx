@@ -7,7 +7,7 @@ const Features = () => {
             icon: <Layout size={32} />,
             title: 'Frontend Development',
             description: 'Building responsive, accessible, and performant user interfaces.',
-            skills: ['React', 'Flutter', 'Dart', 'Swift', 'TypeScript']
+            skills: ['React', 'Flutter', 'Dart', 'Swift', 'SwiftUI', 'UIKit', 'MapKit', 'TypeScript']
         },
         {
             icon: <Server size={32} />,
