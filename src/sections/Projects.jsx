@@ -1,7 +1,10 @@
 import { ExternalLink, Github } from 'lucide-react';
+import useScrollReveal from '../hooks/useScrollReveal';
 import './Projects.css';
 
 const Projects = () => {
+    const [sectionRef, isVisible] = useScrollReveal(0.1);
+
     const projects = [
         {
             title: 'Quraan Kareem App',
@@ -19,18 +22,28 @@ const Projects = () => {
             liveLink: '#',
             codeLink: 'https://github.com/Mohamed0Amr/StoreApp'
         },
-
+        {
+            title: 'NeuroClick',
+            description: 'AI-powered mental health app for ADHD support. Features mood detection via facial recognition, personalized daily tips, and smart scheduling with reminders to boost happiness and productivity.',
+            tags: ['Flutter', 'Python', 'Firebase', 'Machine Learning'],
+            image: `${import.meta.env.BASE_URL}NeuroClick.png`,
+            liveLink: '#',
+            codeLink: 'https://github.com/Mohamed0Amr/NeuroClickApp'
+        },
     ];
 
     return (
-        <section id="project" className="projects-section">
+        <section id="project" className="projects-section" ref={sectionRef}>
             <div className="container">
-                <h2 className="section-title">Featured Projects</h2>
-                <p className="section-subtitle">A selection of my recent work and side projects.</p>
+                <h2 className={`section-title scroll-reveal ${isVisible ? 'visible' : ''}`}>Featured Projects</h2>
+                <p className={`section-subtitle scroll-reveal ${isVisible ? 'visible' : ''}`}>A selection of my recent work and side projects.</p>
 
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="project-card">
+                        <div
+                            key={index}
+                            className={`project-card scroll-reveal delay-${index + 1} ${isVisible ? 'visible' : ''}`}
+                        >
                             <div className="project-image">
                                 <img src={project.image} alt={project.title} loading="lazy" />
                                 <div className="project-overlay">
@@ -63,3 +76,4 @@ const Projects = () => {
 };
 
 export default Projects;
+

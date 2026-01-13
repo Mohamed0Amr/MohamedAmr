@@ -1,7 +1,10 @@
-import { Code, Layout, Server, Database, Smartphone, PenTool } from 'lucide-react';
+import { Layout, Server, PenTool } from 'lucide-react';
+import useScrollReveal from '../hooks/useScrollReveal';
 import './Features.css';
 
 const Features = () => {
+    const [sectionRef, isVisible] = useScrollReveal(0.1);
+
     const features = [
         {
             icon: <Layout size={32} />,
@@ -24,14 +27,17 @@ const Features = () => {
     ];
 
     return (
-        <section id="feature" className="features-section">
+        <section id="feature" className="features-section" ref={sectionRef}>
             <div className="container">
-                <h2 className="section-title">What I Do</h2>
-                <p className="section-subtitle">Specialized in building digital products with modern technologies.</p>
+                <h2 className={`section-title scroll-reveal ${isVisible ? 'visible' : ''}`}>What I Do</h2>
+                <p className={`section-subtitle scroll-reveal ${isVisible ? 'visible' : ''}`}>Specialized in building digital products with modern technologies.</p>
 
                 <div className="features-grid">
                     {features.map((feature, index) => (
-                        <div key={index} className="feature-card">
+                        <div
+                            key={index}
+                            className={`feature-card scroll-reveal delay-${index + 1} ${isVisible ? 'visible' : ''}`}
+                        >
                             <div className="feature-icon">
                                 {feature.icon}
                             </div>

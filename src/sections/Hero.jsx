@@ -1,14 +1,34 @@
 import { ArrowRight, Github, Linkedin, Mail } from 'lucide-react';
+import { useState, useEffect } from 'react';
 import './Hero.css';
 
 const Hero = () => {
+    const [displayText, setDisplayText] = useState('');
+    const fullText = "Hi, I'm ";
+
+    useEffect(() => {
+        let index = 0;
+        const timer = setInterval(() => {
+            if (index <= fullText.length) {
+                setDisplayText(fullText.slice(0, index));
+                index++;
+            } else {
+                clearInterval(timer);
+            }
+        }, 100);
+
+        return () => clearInterval(timer);
+    }, []);
+
     return (
         <section id="home" className="hero">
             <div className="hero-container">
                 <div className="hero-content">
                     <span className="hero-subtitle">Software Engineer</span>
                     <h1 className="hero-title">
-                        Hi, I'm <span className="highlight">Mohamed</span>
+                        <span className="typing-text">{displayText}</span>
+                        <span className="highlight">Mohamed</span>
+                        <span className="cursor-blink">|</span>
                     </h1>
                     <p className="hero-description">
                         Software Engineer specialized in mobile application development and digital banking
@@ -46,3 +66,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

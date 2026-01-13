@@ -55,6 +55,31 @@
     line-height: 1.7;
 }
 
+/* Typing Animation */
+.typing-text {
+    display: inline;
+}
+
+.cursor-blink {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 400;
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 /* Actions */
 .hero-actions {
     display: flex;

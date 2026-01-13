@@ -4,6 +4,7 @@ import CustomCursor from './components/CustomCursor';
 import Hero from './sections/Hero';
 import Features from './sections/Features';
 import Projects from './sections/Projects';
+import SmallProjects from './sections/SmallProjects';
 import Contact from './sections/Contact';
 import './index.css';
 
@@ -38,6 +39,7 @@ function App() {
       <Hero />
       <Features />
       <Projects />
+      <SmallProjects />
       <Contact />
     </div>
   );

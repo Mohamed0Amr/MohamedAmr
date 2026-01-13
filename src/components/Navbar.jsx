@@ -9,13 +9,14 @@ const Navbar = ({ theme, toggleTheme }) => {
         { name: 'Home', href: '#home' },
         { name: 'Skills', href: '#feature' },
         { name: 'Projects', href: '#project' },
+        { name: 'Mini Projects', href: '#small-projects' },
         { name: 'Contact', href: '#contact' },
     ];
 
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <a href="#home" className="logo">Portfolio</a>
+                <a href="#home" className="logo">Mohamed</a>
 
                 <div className="nav-actions">
                     {/* Desktop Menu */}
