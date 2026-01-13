@@ -26,7 +26,7 @@ const Projects = () => {
             title: 'NeuroClick',
             description: 'AI-powered mental health app for ADHD support. Features mood detection via facial recognition, personalized daily tips, and smart scheduling with reminders to boost happiness and productivity.',
             tags: ['Flutter', 'Python', 'Firebase', 'Machine Learning'],
-            image: `${import.meta.env.BASE_URL}NeuroClick.png`,
+            image: `${import.meta.env.BASE_URL}NeuroClick.webp`,
             liveLink: '#',
             codeLink: 'https://github.com/Mohamed0Amr/NeuroClickApp'
         },
