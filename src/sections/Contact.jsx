@@ -10,7 +10,7 @@ const Contact = () => {
                     Have a project in mind or want to say hello? I'm always open to new opportunities and interesting conversations.
                 </p>
 
-                <a href="mailto:contact@example.com" className="email-button">
+                <a href="mailto:mohamedamr9722@gmail.com" className="email-button">
                     <Mail size={20} />
                     mohamedamr9722@gmail.com
                 </a>
